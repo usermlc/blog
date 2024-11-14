@@ -54,28 +54,6 @@ A robust blog application built using the Slim Framework, Blade templating, and 
 - Add comments on individual post pages.
 - Edit or delete comments if you are the author.
 
-## Project Structure
-
-```sh
-.
-├── app
-│   ├── Controllers
-│   ├── Models
-│   ├── Services
-│   └── helpers.php
-├── public
-│   ├── index.php
-│   └── css
-│       └── style.css
-├── resources
-│   └── views
-├── vendor
-├── .env.example
-├── composer.json
-├── migrate.php
-└── README.md
-```
-
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements, bug fixes, or new features.

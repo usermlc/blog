@@ -1,0 +1,30 @@
+{
+  "name": "await/slim-blog",
+  "description": "A robust blog application built using the Slim Framework, Blade templating, and dependency injection principles. It offers user authentication, post management, and commenting features to create a seamless blogging experience.",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "files": [
+      "./app/helpers.php"
+    ],
+    "psr-4": {
+      "Sangarius\\SlimBlog\\": "app/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.1",
+    "slim/slim": "4.*",
+    "guzzlehttp/psr7": "^2.6",
+    "php-di/php-di": "^7.0",
+    "jenssegers/blade": "^1.4",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "php-di/slim-bridge": "^3.4",
+    "vlucas/phpdotenv": "^5.6",
+    "ext-pdo": "*"
+  },
+  "scripts": {
+    "start": "php -S localhost:8000 -t public"
+  }
+}

@@ -1,0 +1,229 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Set default font */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color for better contrast */
+    line-height: 1.7; /* Comfortable line spacing */
+    padding: 30px 20px; /* Padding around the body */
+    transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+}
+
+/* Container for all content */
+.container {
+    width: 85%;
+    margin: 0 auto; /* Center align the container */
+    max-width: 1200px; /* Maximum width of the container */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #222; /* Dark color for headings */
+    font-weight: bold; /* Bold font for emphasis */
+    margin-bottom: 10px; /* Space below headings */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+h1 {
+    font-size: 3rem; /* Larger font size for main heading */
+    border-bottom: 3px solid #007bff; /* Blue bottom border */
+    padding-bottom: 5px; /* Space below text */
+}
+
+h2 {
+    font-size: 2.5rem; /* Medium font size for subheadings */
+}
+
+h3 {
+    font-size: 1.8rem; /* Smaller font size for tertiary headings */
+}
+
+/* Text */
+p {
+    margin-bottom: 20px; /* Space below paragraphs */
+    font-size: 1.1rem; /* Slightly larger font size for better readability */
+    line-height: 1.8; /* Increased line spacing */
+    color: #555; /* Softer text color */
+}
+
+a {
+    color: white; /* Default link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 600; /* Slightly bold text */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #f1f1f1; /* Change color on hover */
+}
+
+h2 a {
+    color: #007bff; /* Blue color for links in h2 */
+}
+
+h2 a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navigation */
+nav {
+    background-color: #007bff; /* Blue background */
+    padding: 15px; /* Padding inside nav */
+    text-align: center; /* Center align text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+ul {
+    list-style: none; /* Remove list bullets */
+}
+
+nav ul {
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline-block; /* Display list items in a row */
+    margin: 0 20px; /* Space between items */
+}
+
+nav a {
+    padding: 10px 15px; /* Padding inside links */
+}
+
+nav ul li a {
+    color: #ffffff; /* White text color */
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #f1f1f1; /* Light gray on hover */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%; /* Sidebar width */
+    padding: 20px; /* Padding inside sidebar */
+    background-color: #f4f4f4; /* Light gray background */
+    margin-right: 20px; /* Space to the right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.sidebar h2 {
+    font-size: 1.6rem; /* Smaller heading size */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin-bottom: 15px; /* Space between items */
+}
+
+/* Main content */
+.main-content {
+    width: 70%; /* Main content width */
+    background-color: white; /* White background */
+    padding: 20px; /* Padding inside main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.main-content img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below image */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.main-content img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Comment form */
+.comment-form {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 25px; /* Padding inside form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 1rem; /* Normal font size */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.comment-form input:focus, .comment-form textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+.comment-form button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 12px 20px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.comment-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center align text */
+    padding: 15px 0; /* Vertical padding */
+    position: relative; /* Relative positioning */
+    margin-top: 30px; /* Space above footer */
+    border-radius: 5px; /* Rounded corners */
+}
+
+footer a {
+    color: #f1f1f1; /* Light gray text */
+    font-weight: 600; /* Slightly bold text */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer a:hover {
+    color: #007bff; /* Blue on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .sidebar, .main-content {
+        width: 100%; /* Full width on small screens */
+        margin-right: 0; /* Remove right margin */
+        float: none; /* Remove float */
+    }
+
+    nav ul li {
+        display: block; /* Display block on small screens */
+        margin: 10px 0; /* Vertical space between items */
+    }
+
+    .container {
+        width: 95%; /* Adjust container width */
+    }
+}
